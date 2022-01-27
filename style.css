@@ -9,3 +9,19 @@ i{
 a{
 cursor: default;
 }
+
+input.form-control{
+    border-radius: 20px;
+}
+
+.movie-body{
+    display: none;
+    max-width:100vh;
+    text-align: center;
+    border-style: solid;
+    margin:20vh auto;
+    height:50px;
+    line-height: 2.5;
+}
+
+
