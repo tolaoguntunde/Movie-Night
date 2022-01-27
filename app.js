@@ -26,7 +26,7 @@ form.addEventListener("submit",function(e){
     
     const searchTerm =movieSearchByUser.value;
     const apiKey = "8f802cb8";
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`;
+    const url = `https://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`;
    
     getMovies(url);
 
