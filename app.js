@@ -9,14 +9,18 @@ async function getMovies(data){
     const resData = await res.json();
     console.log(resData);
     const title = resData.Title;
-    const year = resData.Released;
     const image = resData.Poster;
     const rating = resData.imdbRating;
+    const box = resData.BoxOffice;
     const duration = resData.Runtime;
-    console.log(title,year,rating,duration);
+    const plot = resData.Plot;
+    // console.log(title,year,rating,duration);
     movieBody.style.display = 'none';
-    movieDisplay.innerHTML = `<h1 style= color:red >Movie- ${title}</h1>  <p> ${title} released in year ${year} </p> <p> IMDB rating is ${rating}</p>
-    <p> Duration ${duration}</p><img src="${image}">`
+    movieDisplay.innerHTML = `<h2 class="title" >Movie - ${title}</h2> 
+    <img src="${image}">
+    <p class="plot"> ${plot}</p>
+    <p class='box'>Box office: ${box}</p>
+    <p class="rating"> IMDB rating: ${rating} / 10 </p>`
     
 }
 

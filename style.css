@@ -19,7 +19,6 @@ input.form-control{
 }
 
 .movie-body{
-    /* display: none; */
     max-width:100vh;
     text-align: center;
     border-style: solid;
@@ -28,4 +27,26 @@ input.form-control{
     line-height: 2.5;
 }
 
+.box{
+    max-width: 40vh;
+    background-color: #43a805;
+    padding: 10px;
+    border-style: solid;
+    border-color: #E8E8A6;
+}
 
+.rating{
+    max-width: 40vh;
+    background-color: #dcddba;
+    padding: 10px;
+    border-style: solid;
+    border-color: #E8E8A6;
+}
+
+.title{
+    color:red;
+}
+
+.plot{
+    padding:10px;
+}
