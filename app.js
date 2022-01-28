@@ -5,7 +5,7 @@ const movieBody = document.querySelector(".movie-body");
 
 
 // async function getMovies(data){
-//     const res = await axios.get(data);
+//     const res = await fetch(data);
 //     const resData = await res.json();
 //     console.log(resData);
 //     const title = resData.Title;
