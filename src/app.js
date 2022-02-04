@@ -1,3 +1,5 @@
+import style from './style.css'
+
 const form = document.querySelector("#form");
 const movieDisplay = document.querySelector(".movie-result");
 const movieSearchByUser = document.querySelector("#msearch");
@@ -41,7 +43,7 @@ const movieBody = document.querySelector(".movie-body");
 async function getMovies() {
     try {
         const searchTerm = movieSearchByUser.value;
-        const apiKey = "8f802cb8";
+        const apiKey = process.env.APIKEY;
         const url = `https://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`;
         const resData = await axios.get(url);
         console.log(resData);
@@ -71,3 +73,5 @@ form.addEventListener("submit", function (e) {
 
 
 })
+
+console.log(process.env.SECRET_NUMBER)
